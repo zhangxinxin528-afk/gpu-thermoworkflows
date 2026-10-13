@@ -1,0 +1,15 @@
+name: cp2k-cuda-build-tools
+channels:
+  - conda-forge
+dependencies:
+  - cmake
+  - ninja
+  - pkg-config
+  - gcc_linux-64=14
+  - gxx_linux-64=14
+  - gfortran_linux-64=14
+  - cuda-nvcc=12.9
+  - cuda-cudart-dev=12.9
+  - libcublas-dev
+  - libcufft-dev
+  - libcusolver-dev

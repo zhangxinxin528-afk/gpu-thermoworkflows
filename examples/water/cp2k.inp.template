@@ -1,0 +1,56 @@
+&GLOBAL
+  PROJECT fixed
+  RUN_TYPE ENERGY_FORCE
+  PRINT_LEVEL MEDIUM
+&END GLOBAL
+&FORCE_EVAL
+  METHOD Quickstep
+  STRESS_TENSOR NONE
+  &DFT
+    BASIS_SET_FILE_NAME "{{basis_file}}"
+    POTENTIAL_FILE_NAME "{{potential_file}}"
+    CHARGE {{CHARGE}}
+    UKS {{UKS}}
+    MULTIPLICITY {{MULTIPLICITY}}
+    &QS
+      METHOD GPW
+      EPS_DEFAULT 1e-12
+    &END QS
+    &MGRID
+      NGRIDS {{ngrids}}
+      CUTOFF [Ry] {{cutoff_Ry}}
+      REL_CUTOFF [Ry] {{rel_cutoff_Ry}}
+    &END MGRID
+    &POISSON
+      PERIODIC {{PERIODIC}}
+      POISSON_SOLVER {{poisson_solver}}
+    &END POISSON
+    &SCF
+      EPS_SCF {{eps_scf}}
+      MAX_SCF {{max_scf}}
+      SCF_GUESS ATOMIC
+      &OT
+        MINIMIZER DIIS
+        PRECONDITIONER FULL_ALL
+      &END OT
+    &END SCF
+    &XC
+      &XC_FUNCTIONAL {{xc}}
+      &END XC_FUNCTIONAL
+    &END XC
+  &END DFT
+  &SUBSYS
+    &CELL
+{{CELL}}
+      PERIODIC {{PERIODIC}}
+    &END CELL
+    &COORD
+{{COORD}}
+    &END COORD
+{{KINDS}}
+  &END SUBSYS
+  &PRINT
+    &FORCES ON
+    &END FORCES
+  &END PRINT
+&END FORCE_EVAL

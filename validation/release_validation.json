@@ -1,0 +1,108 @@
+{
+  "state": "PASS",
+  "version": "0.1.0",
+  "recorded_UTC": "2026-10-13T21:32:02Z",
+  "scope": "release QA evidence; publication status is reported by GitHub",
+  "offline_tests": {
+    "windows": {
+      "state": "PASS",
+      "tests": 15,
+      "seconds": 32.141,
+      "log_sha256": "f3a14cf4c97b3d9a3d747ba670cdb5129a4bf4b0d2cb17f1bb2954ed081831a6"
+    },
+    "linux": {
+      "state": "PASS",
+      "tests": 15,
+      "seconds": 72.552,
+      "log_sha256": "7a71cc5fdbc427cdadc5b37aedcb4b849e10f9b9520bf9dc09ed750ba712c108"
+    }
+  },
+  "real_smoke_checks": {
+    "cp2k": {
+      "state": "PASS",
+      "fixed_atoms": 3,
+      "geometry_optimized": false,
+      "energy_Ha": -17.219538182033094,
+      "forces_Ha_Bohr": [
+        [
+          -1.14105314e-09,
+          -4.62292169e-11,
+          0.0089341413
+        ],
+        [
+          -0.00974199198,
+          -3.08952607e-11,
+          -0.00703753359
+        ],
+        [
+          0.00974199312,
+          7.74802263e-11,
+          -0.00703753422
+        ]
+      ],
+      "elapsed_seconds": 44.762511253356934,
+      "raw_artifact_hashes": [
+        "310572e123d7359e40411f8c113baa4a68e1c2113d1d20d302050bd7eedf41ea",
+        "bfbbf20560351d5091f5c0e13a49d5471cdba7509eafbe324cb461ace2b49ab5"
+      ],
+      "output_version_header": "CP2K| version string:                                       CP2K version 2026.2",
+      "executable_sha256": "a1bbb7bf96e7b581b81e9306515af6376bb25321365c077b61959af6d4811891",
+      "version_probe_returncode": 2,
+      "backend": "CPU; CUDA execution is historical evidence"
+    },
+    "gpu4pyscf": {
+      "state": "PASS",
+      "fixed_atoms": 3,
+      "geometry_optimized": false,
+      "energy_Ha": -76.28346549899982,
+      "forces_Ha_Bohr": [
+        [
+          6.727679743322172e-16,
+          9.256938476256662e-17,
+          0.02624906502327398
+        ],
+        [
+          -0.011469647999936276,
+          -2.4729390549795174e-16,
+          -0.013124532511634144
+        ],
+        [
+          0.01146964799993162,
+          1.209583532064166e-16,
+          -0.013124532511630002
+        ]
+      ],
+      "elapsed_seconds": 213.12441682815552,
+      "raw_artifact_hashes": [
+        "bcfbb632e2cd6e2fd67baf18eb3899cda9f61b2d093bba14a2e4f3edec6b6fc8",
+        "645a752d6f02c9f6abe4a996282574a9b7244ab2557af21373cfd5bf7840ec89"
+      ],
+      "versions": {
+        "pyscf": "2.14.0",
+        "gpu4pyscf-cuda12x": "1.8.1",
+        "cupy-cuda12x": "13.4.1",
+        "pyscf-dispersion": "1.5.0"
+      },
+      "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    }
+  },
+  "wheel_install_and_console": {
+    "state": "PASS",
+    "synthetic_force_points": 19,
+    "internal_modes": 3
+  },
+  "source_modules_sha256": {
+    "src/gpu_thermoworkflows/analysis.py": "857da719f6115c14fb9ac962d93ecd4f763f26887987ca8245f6fbe520597ae4",
+    "src/gpu_thermoworkflows/cli.py": "284bf794850eb61910f3b5178dd248792c4d848fd8ee50241f5994987d01e4ef",
+    "src/gpu_thermoworkflows/config.py": "9627c34bafb52e299503ba230c214f2cd7fdef70bfda28f884c5c2781ae9217d",
+    "src/gpu_thermoworkflows/cuda.py": "4a11594284f2da991d9db52350702014ff0bf0b53a4ee2f3b3d53e0658e8e839",
+    "src/gpu_thermoworkflows/engines.py": "353af08f751507642fc5d0512ead5c90b97c5603e7584823c6694bae81be8ed7",
+    "src/gpu_thermoworkflows/runner.py": "6c15f6993a97df0b6cb3cd85c98bcf4eceacaf6351de565518b4db3edcf80fc2",
+    "src/gpu_thermoworkflows/storage.py": "588e6db3c9e16631c239f25bd889fffe67e61b1c5ed101f3891a48a9c34ce90e",
+    "src/gpu_thermoworkflows/__init__.py": "6b20f153a601dd91557ff5508ab3ff5ab01799bc2f6c556fb55c95c9f1e5165d",
+    "src/gpu_thermoworkflows/__main__.py": "307299fda7b77d22c64cb51430ec75e5f59d78e9c948786afb3b2544fe45e4b7"
+  },
+  "new_cuda_cp2k_cloud_test": "NOT_RUN; historical A100 measurements are separately labeled",
+  "upstream_binaries_included": false,
+  "laboratory_data_included": false
+}

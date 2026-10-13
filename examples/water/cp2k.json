@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "name": "water-cp2k-center",
+  "engine": "cp2k",
+  "paths": {"work_dir": "../../runs/water-cp2k", "structure": "water.xyz", "template": "cp2k.inp.template"},
+  "calculation": {
+    "charge": 0, "multiplicity": 1, "periodic": false,
+    "geometry_optimization": false, "hessian": false,
+    "cell_A": [[14, 0, 0], [0, 14, 0], [0, 0, 14]],
+    "displacement": {"value": 0.01, "unit": "angstrom"}
+  },
+  "method": {
+    "xc": "PBE", "cutoff_Ry": 300, "rel_cutoff_Ry": 40, "ngrids": 4,
+    "eps_scf": 1e-8, "max_scf": 100, "poisson_solver": "MT",
+    "basis_file": "${CP2K_DATA_DIR}/BASIS_MOLOPT",
+    "potential_file": "${CP2K_DATA_DIR}/GTH_POTENTIALS",
+    "kinds": {
+      "H": {"basis": "DZVP-MOLOPT-SR-GTH", "potential": "GTH-PBE-q1"},
+      "O": {"basis": "DZVP-MOLOPT-SR-GTH", "potential": "GTH-PBE-q6"}
+    }
+  },
+  "resources": {"workers": 1, "threads_per_worker": 2, "memory_mb_per_worker": 1500, "timeout_seconds": 180},
+  "execution": {"cp2k_command": ["cp2k.psmp"], "input_check": true, "max_tasks_per_run": null},
+  "analysis": {"temperature_K": 298.15, "symmetry_number": 2, "standard_state": "1bar"}
+}

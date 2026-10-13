@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite the tagged workflow release and the upstream simulation engines used in your work."
+type: software
+title: "GPU Thermoworkflows: resumable fixed-geometry force and thermochemistry workflows"
+version: 0.1.0
+date-released: 2026-10-13
+authors:
+  - name: "zhangxinxin528-afk"
+    website: "https://github.com/zhangxinxin528-afk"
+repository-code: "https://github.com/zhangxinxin528-afk/gpu-thermoworkflows"
+url: "https://github.com/zhangxinxin528-afk/gpu-thermoworkflows"
+license: MIT
+abstract: "Configurable CP2K and GPU4PySCF force-point execution, resumable queues, numerical Hessians, and fixed-configuration thermal corrections."
+keywords:
+  - CP2K
+  - GPU4PySCF
+  - CUDA
+  - numerical Hessian
+  - thermochemistry

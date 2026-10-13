@@ -1,0 +1,17 @@
+# Historical application versions tested on RTX 4070 Laptop / WSL.
+# Install in a separate Linux environment; the NVIDIA driver is external.
+# This is a tested top-level set, not a universal CUDA compatibility promise.
+numpy==2.2.6
+pyscf==2.14.0
+pyscf-dispersion==1.5.0
+gpu4pyscf-cuda12x==1.8.1
+gpu4pyscf-libxc-cuda12x==0.8.1
+cupy-cuda12x==13.4.1
+cutensor-cu12==2.2.0
+nvidia-cublas-cu12==12.9.2.10
+nvidia-cuda-nvrtc-cu12==12.9.86
+nvidia-cuda-runtime-cu12==12.9.79
+nvidia-curand-cu12==10.3.10.19
+nvidia-cusolver-cu12==11.7.5.82
+nvidia-cusparse-cu12==12.5.10.65
+nvidia-nvjitlink-cu12==12.9.86

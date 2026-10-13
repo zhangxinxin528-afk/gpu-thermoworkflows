@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gpu-thermoworkflows"
+version = "0.1.0"
+description = "Resumable fixed-geometry CP2K and GPU4PySCF force and thermochemistry workflows"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "GPU Thermoworkflows contributors"}]
+maintainers = [{name = "zhangxinxin528-afk"}]
+dependencies = ["numpy>=1.26,<3"]
+
+[project.urls]
+Repository = "https://github.com/zhangxinxin528-afk/gpu-thermoworkflows"
+Documentation = "https://github.com/zhangxinxin528-afk/gpu-thermoworkflows#readme"
+Issues = "https://github.com/zhangxinxin528-afk/gpu-thermoworkflows/issues"
+
+[project.scripts]
+gtw = "gpu_thermoworkflows.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

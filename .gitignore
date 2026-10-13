@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv*/
+build/
+dist/
+runs/
+validation/local_*/
+validation/*
+!validation/release_validation.json
+!validation/windows-tests.log
+!validation/linux-tests.log
+!validation/smoke_checks.json
+*.wfn*
+*.chk
+*.cube
+.DS_Store

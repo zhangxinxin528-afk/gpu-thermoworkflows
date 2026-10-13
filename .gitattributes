@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.xyz text eol=lf
+*.template text eol=lf
+*.yml text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+*.log -text whitespace=cr-at-eol
+benchmarks/*.csv -text whitespace=cr-at-eol

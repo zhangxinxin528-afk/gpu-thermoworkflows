@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "name": "water-gpu-center",
+  "engine": "gpu4pyscf",
+  "paths": {"work_dir": "../../runs/water-gpu", "structure": "water.xyz"},
+  "calculation": {
+    "charge": 0, "multiplicity": 1, "periodic": false,
+    "geometry_optimization": false, "hessian": false,
+    "displacement": {"value": 0.004, "unit": "bohr"}
+  },
+  "method": {
+    "basis": "def2-SVP", "xc": "PBE", "dispersion": "d3bj", "density_fit": true,
+    "grid_level": 4, "conv_tol": 1e-10, "conv_tol_grad": 1e-7, "max_cycle": 120,
+    "solvent": "water", "solvation": "SMD", "grid_response": true, "auxbasis_response": true
+  },
+  "resources": {
+    "workers": 1, "threads_per_worker": 2, "memory_mb_per_worker": 1500,
+    "min_available_memory_mb": 2500, "gpu_device": 0, "min_gpu_free_memory_mb": 1200,
+    "timeout_seconds": 180
+  },
+  "execution": {"max_tasks_per_run": null},
+  "analysis": {"temperature_K": 298.15, "symmetry_number": 2, "standard_state": "1M"}
+}

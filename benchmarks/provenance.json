@@ -1,0 +1,10 @@
+{
+  "classification": "historical application measurements; distinct from new adapter QA",
+  "cp2k_version": "2026.2",
+  "upstream_source_revision": "git:c92cc08",
+  "source_archive_sha256": "f9bd86f580f57a53a0768c0045d1417f9f9a1d66d851ed7f662f496200043373",
+  "historical_point_table": "historical_cp2k_points.csv",
+  "source_report_filename": "CP2K_A100_PERFORMANCE_CN.txt",
+  "geometry_optimization": false,
+  "laboratory_data_included": false
+}

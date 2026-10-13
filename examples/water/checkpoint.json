@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "name": "water-checkpoint-demo",
+  "engine": "mock",
+  "paths": {"work_dir": "../../runs/water-checkpoint", "structure": "water.xyz"},
+  "calculation": {
+    "charge": 0, "multiplicity": 1, "periodic": false,
+    "geometry_optimization": false, "hessian": true,
+    "displacement": {"value": 0.004, "unit": "bohr"}
+  },
+  "method": {"spring_constant_Ha_Bohr2": 0.2, "delay_seconds": 0.1},
+  "resources": {"workers": 2, "threads_per_worker": 1, "memory_mb_per_worker": 256, "timeout_seconds": 30},
+  "execution": {"max_tasks_per_run": null},
+  "analysis": {"temperature_K": 298.15, "symmetry_number": 2, "standard_state": "1bar"}
+}

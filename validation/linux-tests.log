@@ -1,0 +1,20 @@
+test_analysis_requires_complete_hessian (test_workflow.WorkflowTests.test_analysis_requires_complete_hessian) ... ok
+test_atom_count_linear_projection_known_frequency (test_workflow.WorkflowTests.test_atom_count_linear_projection_known_frequency) ... ok
+test_changed_inputs_rejected_and_preserved (test_workflow.WorkflowTests.test_changed_inputs_rejected_and_preserved) ... ok
+test_complete_and_analyze_water (test_workflow.WorkflowTests.test_complete_and_analyze_water) ... ok
+test_cooperative_pause_and_resume (test_workflow.WorkflowTests.test_cooperative_pause_and_resume) ... ok
+test_corrupted_result_is_not_reused (test_workflow.WorkflowTests.test_corrupted_result_is_not_reused) ... ok
+test_cp2k_parser_both_formats_and_failure (test_workflow.WorkflowTests.test_cp2k_parser_both_formats_and_failure) ... ok
+test_cuda_build_recipe_dry_run (test_workflow.WorkflowTests.test_cuda_build_recipe_dry_run) ... ok
+test_external_cp2k_adapter_and_failed_attempt_retention (test_workflow.WorkflowTests.test_external_cp2k_adapter_and_failed_attempt_retention) ... ok
+test_lock_and_process_identity (test_workflow.WorkflowTests.test_lock_and_process_identity) ... ok
+test_optimization_nonfinite_and_unknown_backend_rejected (test_workflow.WorkflowTests.test_optimization_nonfinite_and_unknown_backend_rejected) ... ok
+test_resume_skips_verified_points_and_budget (test_workflow.WorkflowTests.test_resume_skips_verified_points_and_budget) ... ok
+test_standard_state_conversion_is_explicit (test_workflow.WorkflowTests.test_standard_state_conversion_is_explicit) ... ok
+test_template_config_controls_methods_coordinates (test_workflow.WorkflowTests.test_template_config_controls_methods_coordinates) ... ok
+test_version_probe_failure_is_retained_with_successful_force_output (test_workflow.WorkflowTests.test_version_probe_failure_is_retained_with_successful_force_output) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 72.552s
+
+OK
